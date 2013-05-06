@@ -1,0 +1,486 @@
+ul.fl_tex_menus {
+	width : 300px;
+	margin : 0px;
+	margin : 20px;
+	padding : 0px;
+}
+ul.fl_tex_menus:after {
+	clear : both;
+	content : '';
+	display : block;
+	height : 0;
+	visibility : hidden;
+}
+textarea.fl_tex_edit_area {
+	width : 100%;
+	height : 5em;
+}
+div.fl_tex_preview {
+	height : 80px;
+	width : 100%;
+}
+ul.fl_tex_menus li {
+	float : left;
+	display : inline;
+	height : 20px;
+	width : 50px;
+	border : solid 1px #ccc;
+	cursor : pointer;
+	position : relative;
+}
+ul.fl_tex_menus li.fl_tex_sign {
+	width: 50px;
+	background : #ddd url(../fl_images/tex/ee-palettes.gif) 0px 0px repeat;
+}
+ul.fl_tex_menus li.fl_tex_math {
+	width: 50px;
+	background : #ddd url(../fl_images/tex/ee-palettes.gif) -45px 0px repeat;
+}
+ul.fl_tex_menus li.fl_tex_caps {
+	width: 50px;
+	background : #ddd url(../fl_images/tex/ee-palettes.gif) -91px 0px repeat;
+}
+ul.fl_tex_menus li.fl_tex_fracs {
+	width: 50px;
+	background : #ddd url(../fl_images/tex/ee-palettes.gif) -135px 0px repeat;
+}
+ul.fl_tex_menus li.fl_tex_arrows {
+	width: 50px;
+	background : #ddd url(../fl_images/tex/ee-palettes.gif) -184px 0px repeat;
+}
+ul.fl_tex_menus li table{
+	position : aboslute;
+	top : -50px;
+	left : 0px;
+	border-collapse : collapse;
+	table-layout : fixed;
+}
+ul.fl_tex_menus li table td{
+	border : solid 1px #ccc;
+	background-color : #ffffee;
+	padding : 10px;
+	font-size : 0px;
+	line-height : 0;
+	text-indent : -9999px;
+	overflow : hidden;
+}
+ul.fl_tex_menus li table td.hover{
+		background-color : #0fc;
+}
+ul.fl_tex_menus li table.frac_table td{
+	padding : 30px 16px;
+}
+ul.fl_tex_menus li.fl_tex_sign table {
+	margin-top : -128px;
+	z-index : 10;
+}
+ul.fl_tex_menus li.fl_tex_math table {
+	margin-top : -106px;
+	z-index : 11;
+}
+ul.fl_tex_menus li.fl_tex_caps table {
+	margin-top : -64px;
+	z-index : 12;
+}
+ul.fl_tex_menus li.fl_tex_fracs table {
+	margin-top : -123px;
+	z-index : 13;
+}
+ul.fl_tex_menus li.fl_tex_arrows table {
+	margin-top : -22px;
+	z-index : 14;
+}
+
+/* ==== sign bgs ==== */
+
+td.sign1-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) 2px -29px;
+}
+td.sign1-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -17px -29px;
+}
+td.sign1-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -33px -29px;
+}
+td.sign1-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -51px -29px;
+}
+td.sign1-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -68px -29px;
+}
+td.sign1-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -88px -29px;
+}
+td.sign1-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -107px -29px;
+}
+td.sign2-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -124px -29px;
+}
+td.sign2-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -142px -29px;
+}
+td.sign2-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -161px -29px;
+}
+td.sign2-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -178px -29px;
+}
+td.sign2-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -196px -29px;
+}
+td.sign2-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -214px -29px;
+}
+td.sign2-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -233px -29px;
+}
+td.sign3-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -251px -29px;
+}
+td.sign3-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -268px -29px;
+}
+td.sign3-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -285px -29px;
+}
+td.sign3-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -304px -29px;
+}
+td.sign3-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -323px -29px;
+}
+td.sign3-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -340px -29px;
+}
+td.sign3-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -358px -29px;
+}
+td.sign4-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -375px -29px;
+}
+td.sign4-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -392px -29px;
+}
+td.sign4-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -411px -29px;
+}
+td.sign4-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -429px -29px;
+}
+td.sign4-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -448px -29px;
+}
+td.sign4-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -467px -29px;
+}
+td.sign4-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -485px -29px;
+}
+td.sign5-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -503px -29px;
+}
+td.sign5-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -520px -29px;
+}
+td.sign5-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -538px -29px;
+}
+td.sign5-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -556px -29px;
+}
+td.sign5-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -573px -29px;
+}
+td.sign5-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -592px -29px;
+}
+td.sign5-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -610px -29px;
+}
+td.sign6-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -628px -29px;
+}
+td.sign6-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -646px -29px;
+}
+td.sign6-3{
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -664px -29px;
+}
+td.sign6-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -682px -29px;
+}
+td.sign6-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -701px -29px;
+}
+
+/* ==== math bgs ==== */
+
+td.math1-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) 1px -50px;
+}
+td.math1-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -18px -50px;
+}
+td.math1-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -34px -50px;
+}
+td.math1-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -52px -49px;
+}
+td.math1-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -70px -50px;
+}
+td.math1-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -89px -49px;
+}
+td.math1-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -108px -49px;
+}
+td.math2-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -125px -50px;
+}
+td.math2-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -143px -50px;
+}
+td.math2-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -161px -49px;
+}
+td.math2-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -179px -49px;
+}
+td.math2-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -197px -49px;
+}
+td.math2-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -216px -49px;
+}
+td.math2-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -234px -49px;
+}
+td.math3-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -251px -49px;
+}
+td.math3-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -268px -49px;
+}
+td.math3-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -287px -49px;
+}
+td.math3-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -305px -49px;
+}
+td.math3-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -324px -49px;
+}
+td.math3-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -341px -49px;
+}
+td.math3-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -358px -49px;
+}
+td.math4-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -375px -49px;
+}
+td.math4-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -394px -49px;
+}
+td.math4-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -411px -49px;
+}
+td.math4-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -431px -49px;
+}
+td.math4-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -449px -49px;
+}
+td.math4-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -467px -49px;
+}
+td.math4-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -485px -49px;
+}
+td.math5-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -504px -49px;
+}
+td.math5-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -521px -49px;
+}
+td.math5-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -538px -49px;
+}
+td.math5-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -557px -49px;
+}
+td.math5-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -575px -48px;
+}
+
+/** ==== caps bgs ==== */
+
+td.cap1-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) 1px -69px;
+}
+td.cap1-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -18px -69px;
+}
+td.cap1-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -34px -69px;
+}
+td.cap1-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -52px -69px;
+}
+td.cap1-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -70px -69px;
+}
+td.cap1-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -89px -69px;
+}
+td.cap1-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -108px -69px;
+}
+td.cap2-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -125px -69px;
+}
+td.cap2-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -143px -69px;
+}
+td.cap2-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -161px -69px;
+}
+td.cap2-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -179px -69px;
+}
+td.cap2-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -197px -69px;
+}
+td.cap2-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -216px -69px;
+}
+td.cap2-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -234px -69px;
+}
+td.cap3-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -251px -69px;
+}
+td.cap3-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -268px -69px;
+}
+td.cap3-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -287px -69px;
+}
+td.cap3-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -305px -69px;
+}
+td.cap3-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -324px -69px;
+}
+td.cap3-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -341px -69px;
+}
+td.cap3-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -358px -69px;
+}
+
+/* ==== frac bgs ==== */
+
+td.frac1-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) 1px -87px;
+}
+td.frac1-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -30px -87px;
+}
+td.frac1-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -57px -87px;
+}
+td.frac1-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -90px -87px;
+}
+td.frac1-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -118px -87px;
+}
+td.frac1-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -148px -87px;
+}
+td.frac1-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -179px -87px;
+}
+td.frac1-8 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -210px -87px;
+}
+td.frac1-9 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -238px -87px;
+}
+td.frac1-10 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -268px -87px;
+}
+
+td.frac2-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -298px -87px;
+}
+td.frac2-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -329px -87px;
+}
+td.frac2-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -358px -87px;
+}
+td.frac2-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -387px -87px;
+}
+td.frac2-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -419px -87px;
+}
+td.frac2-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -449px -87px;
+}
+td.frac2-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -479px -87px;
+}
+td.frac2-8 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -509px -87px;
+}
+td.frac2-9 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -540px -87px;
+}
+td.frac2-10 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -569px -90px;
+}
+
+/* ==== arrow bgs ==== */
+
+td.arrow1-1 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) 1px -149px;
+}
+td.arrow1-2 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -17px -149px;
+}
+td.arrow1-3 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -35px -149px;
+}
+td.arrow1-4 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -53px -149px;
+}
+td.arrow1-5 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -71px -149px;
+}
+td.arrow1-6 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -89px -149px;
+}
+td.arrow1-7 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -108px -149px;
+}
+td.arrow1-8 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -126px -149px;
+}
+td.arrow1-9 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -145px -149px;
+}
+td.arrow1-10 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -162px -149px;
+}
+td.arrow1-11 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -180px -148px;
+}
+td.arrow1-12 {
+	background : #ffe url(../fl_images/tex/ee-palettes.gif) -196px -149px;
+}

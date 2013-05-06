@@ -1,0 +1,39 @@
+div.ci_colorpicker_outer{
+	background-color : #fff;
+	padding : 15px;
+	clear : both;
+	position : absolute;
+	border : solid 1px #ccc;
+}
+div.ci_colorpicker_outer a.ci_colorpicker_close{
+	position : absolute;
+	top : 3px;
+	right : 3px;
+	width : 15px;
+	height : 15px;
+	display : block;
+	background : #fff url(../fl_images/colorpicker/close.gif) no-repeat center center;
+}
+table.ci_colorpicker_table{
+	border : solid 1px #ccc;
+	border-collapse : collapse;
+	margin-top : 5px;
+}
+table.ci_colorpicker_table td{
+	width : 8px;
+	height : 10px;
+	border : solid 1px #ccc;
+}
+table.ci_colorpicker_table td.ci_colorpicker_fw{
+	border : none;
+}
+table.ci_colorpicker_table td.ci_colorpicker_fb{
+	border : none;
+}
+*:first-child+html table.ci_colorpicker_table td{
+	zoom : 1;
+}
+* html table.ci_colorpicker_table td{
+	zoom : 1;
+}
+	

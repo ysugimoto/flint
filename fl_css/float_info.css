@@ -1,0 +1,21 @@
+div.fl_float_box{
+	position :fixed;
+	border : solid 1px #333;
+	-moz-border-radius : 5px 5px 5px 5px;
+	-webkit-border-radius : 5px 5px;
+	border-radius : 5px 5px;
+	background : #000;
+	width : 200px;
+	height : 50px;
+	right : 20px;
+	color : #fff;
+	padding : 10px;
+	font-size : 12px;
+	font-family : Arial;
+	overflow : hidden;
+	opacity : 0;
+	margin : 0;
+}
+* html div.fl_float_box{
+	position : absolute;
+}

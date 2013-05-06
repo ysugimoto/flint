@@ -1,0 +1,514 @@
+div#fl_editor_controls ul.fl_editor_tool {
+	list-style : none outside;
+	height : 25px;
+	padding : 4px 0;
+	width : 750px;
+	margin : 0;
+	margin-right : 16px;
+	background : url(../fl_images/editor/editor_control.gif) top left no-repeat;
+	position : relative;
+}
+div#fl_editor_controls ul.fl_editor_tool:after {
+	clear : both;
+	height : 0;
+	visibility : hidden;
+	content : '';
+	display : block;
+}
+
+div#fl_editor_controls ul.fl_editor_tool li {
+	float : left;
+	display : inline;
+	margin-left : 10px;
+}
+div#fl_editor_controls ul.fl_editor_tool li.fl_editor_tool_first {
+	margin-left : 100px;
+}
+div#fl_editor_controls ul.fl_editor_tool li.fl_editor_tool_radius_close {
+	float : none;
+	display : block;
+	margin : 0;
+	position : absolute;
+	top : 0px;
+	right : -16px;
+	width : 16px;
+	height : 31px;
+	background : url(../fl_images/editor/editor_control.gif) top right no-repeat;
+}
+
+
+div#fl_editor_controls ul.fl_editor_tool li a {
+	display : block;
+	padding : 3px;
+	font-size : 10pt;
+	text-decoration : none;
+	font-family : Arial, sans-serif;
+	text-decoration : none;
+	background : none;
+	color : #000;
+	outline : none;
+	line-height : 1.0;
+}
+div#fl_editor_controls ul.fl_editor_tool li a:hover {
+	color : #666;
+}
+div#fl_editor_controls ul.fl_editor_tool li a.inactive {
+	color : #666;
+}
+div#fl_editor_controls ul.fl_editor_tool li a.active {
+	color : #02278a;
+}
+div#fl_editor_controls ul.fl_editor_menu {
+	list-style : none outside;
+	background : #ccc;/*url(../fl_images/editor/menu_back.jpg) top left repeat-x;*/
+	width : 750px;
+	margin : 0;
+	padding : 0;
+	padding-bottom : 5px;
+}
+div#fl_editor_controls ul.fl_editor_menu:after {
+	clear : both;
+	height : 0;
+	visibility : hidden;
+	content : '';
+	display : block;
+}
+* html div#fl_editor_controls ul.fl_editor_menu {
+	overflow : hidden;
+}
+*:first-child+htmldiv#fl_editor_controls ul.fl_editor_menu {
+	overflow : hidden;
+}
+div#fl_editor_controls ul.fl_editor_menu li{
+	float : left;
+	display : inline;
+	margin-left : 10px;
+	position : relative;
+	height : 22px;
+	margin-top : 5px;
+}
+* html div#fl_editor_controls ul.fl_editor_menu li.fl_list_frame{
+	height : 10px;
+	line-height : 1;
+	font-size : 10px;
+}
+div#fl_editor_controls ul.fl_editor_menu li.frame {
+	float : left;
+	display : inline;
+	margin-left : 10px;
+	position : relative;
+	height : 16px;
+	padding : 3px;
+}
+
+div#fl_editor_controls ul.fl_editor_menu li.frame:hover {
+/*	background : url(../fl_images/editor/active.gif);*/
+	border : solid 1px #fff;
+	padding : 2px;
+}
+div#fl_editor_controls ul.fl_editor_menu li.active {
+	/*background : url(../fl_images/editor/active.gif);*/
+	border : solid 1px #fff;
+	padding : 2px;
+}
+div#fl_editor_controls ul.fl_editor_menu li.active div {
+	right : -1px;
+}
+div#fl_editor_controls ul.fl_editor_menu li.active span.state {
+	left : 3px;
+	margin-top : -1px;
+}
+div#fl_editor_controls ul.fl_editor_menu li.selected {
+	/*background : url(../fl_images/editor/active.gif);*/
+	border : solid 1px #fff;
+	padding : 2px;
+}
+div#fl_editor_controls ul.fl_editor_menu li span {
+	display : block;
+	margin : 0;
+	cursor : pointer;
+	font-size : 10pt;
+	font-family : Arial, sans-serif;
+	line-height : 1.0;
+	text-decoration : none;
+	color : #333;
+}
+span.arrow {
+	background : url(../fl_images/editor/arrow.gif) center center no-repeat;
+	font-size : 0;
+	position : absolute;
+	top : 50%;
+	width : 8px;
+	height : 4px;
+	right : 6px;
+}
+* html span.arrow {
+	top : 5px;
+}
+li.frame span.state {
+	position : absolute;
+	font-size : 0;
+	height : 5px;
+	background : #000;
+	width: 14px;
+	top : 16px;
+	left : 4px;
+}
+* html span#sz_color_state {
+	height : 5px !important;
+	display  :block;
+}
+li.frame span.colored {
+	background : #fff;
+}
+
+span.undo {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/undo.png) top left no-repeat;
+}
+span.redo {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/redo.png) top left no-repeat;
+}
+span.styles {
+	border : solid 1px #036;
+	width : 90px !important;
+	height : 16px;
+	padding : 3px;
+	overflow : hidden;
+}
+span.family {
+	border : solid 1px #036;
+	width : 130px !important;
+	height : 16px;
+	padding : 3px;
+	overflow : hidden;
+}
+span.fontsize {
+	border : solid 1px #036;
+	width : 60px !important;
+	height : 16px;
+	padding : 3px;
+	overflow : hidden;
+}
+span.etc_edit {
+	border : solid 1px #036;
+	width : 90px !important;
+	height : 16px;
+	padding : 3px;
+	overflow : hidden;
+}
+span.bold {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/bold.png) top left no-repeat;
+}
+span.italic {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/italic.png) top left no-repeat;
+}
+span.underline {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/underline.png) top left no-repeat;
+}
+span.fontcolor {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/font.png) top left no-repeat;
+}
+span.bgcolor {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/color.png) top left no-repeat;
+}
+span.linkto {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/link.png) top left no-repeat;
+}
+span.image {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/image.png) top left no-repeat;
+}
+span.orderedlist {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/ol.png) top left no-repeat;
+}
+span.unorderedlist {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/ul.png) top left no-repeat;
+}
+span.alignleft {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/align_left.png) top left no-repeat;
+}
+span.aligncenter {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/align_center.png) top left no-repeat;
+}
+span.alignright {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/align_right.png) top left no-repeat;
+}
+span.emoji {
+	width : 16px;
+	height : 16px;
+	background : url(../fl_images/editor/emoji.gif) center center no-repeat;
+}
+
+/** iframe canvas style **/
+iframe.fl_editor_canvas {
+	width :738px;
+	height : 200px;
+	border : solid 1px #ccc;
+	border-top : none;
+}
+
+ul.fl_editor_sub_menu{
+	position : absolute;
+	margin : 0;
+	padding : 0;
+	border : ridge 1px #666;
+	background : #fff;
+	padding-top : 5px;
+	width : 150px;
+	z-index : 150;
+	display : none;
+}
+ul.fl_editor_font_list {
+	width : 80px;
+}
+ul.fl_editor_etc_list {
+	width : 180px;
+}
+ul.fl_editor_sub_menu li{
+	width : 100%;
+	margin : 0 !important;
+}
+ul.fl_editor_sub_menu  li span {
+	text-align : left;
+	padding : 3px 0 3px 20px;
+}
+ul.fl_editor_sub_menu  li span.active {
+	background : #ffc;
+}
+ul.fl_editor_sub_menu  li span.select {
+
+	background-position : left center;
+	background-repeat : no-repeat;
+}
+ul.fl_editor_sub_menu  li span em {
+	font-style : normal;
+	margin-left : 30px;
+	color : #ccc;
+}
+ul.fl_editor_sub_menu  li span em.p {
+	font-style : normal;
+	margin-left : 51px;
+	color : #ccc;
+}
+ul.fl_editor_sub_menu  li span em.hr {
+	margin-left : 72px;
+}
+ul.fl_editor_sub_menu  li span em.table {
+	margin-left : 86px;
+}
+ul.fl_editor_sub_menu  li span em.object {
+	margin-left : 72px;
+}
+
+/* ==== colorpickers ==== */
+div.fl_editor_colorpicker{
+	position : absolute;
+	padding : 10px;
+	border : ridge 1px #ccc;
+	z-index : 1500;
+	right : 0px;
+	background : #fff;
+	margin-top : 5px;
+	display : none;
+}
+div.fl_editor_colorpicker table {
+	border-collapse : collapse;
+	table-layout : fixed;
+	margin : 0;
+}
+div.fl_editor_colorpicker table td {
+	border : solid 1px #333;
+	width : 16px;
+	height : 16px;
+	font-size : 0;
+	margin : 0;
+	padding : 0;
+}
+div.fl_editor_colorpicker table td div{
+	width : 16px;
+	height : 16px;
+	margin : 0;
+	padding : 0;
+}
+div.fl_editor_colorpicker table.colorpicker_base_grays {
+
+}
+div.fl_editor_colorpicker table.colorpicker_base_vivids {
+	margin-top : 10px;
+}
+div.fl_editor_colorpicker table.colorpicker_base_vivids td {
+	border: solid 1px #333;
+}
+
+div.fl_editor_colorpicker table.colorpicker_others {
+	 border : solid 1px #333;
+	 margin-top : 10px;
+}
+
+div.fl_editor_colorpicker table.colorpicker_others td {
+	 border-left : solid 1px #666;
+	 border-right : solid 1px #666;
+	 border-bottom : none;
+	 border-top : none;
+}
+/* for dashboard extend style*/
+div#main div.fl_editor_colorpicker table tr td {
+	padding : 0;
+	height : 16px;
+	line-height : 1.0;
+	width : 16px;
+}
+div#main div.fl_editor_colorpicker table {
+	width : auto;
+}
+
+/* ==== emojipicker ==== */
+div.fl_editor_emojipicker {
+	overflow : hidden;
+	background-color : #fff;
+	position : relative;
+	height : 200px;
+	border-left : solid 1px #ccc;
+	border-right : solid 1px #ccc;
+	border-bottom : solid 1px #ccc;
+	display : none;
+}
+div.fl_editor_emojipicker ul {
+	padding : 25px 10px 0px 10px;
+}
+div.fl_editor_emojipicker ul li {
+	list-style : none outside;
+	padding : 3px;
+	float : left;
+	border : solid 1px #fff;
+	cursor : pointer;
+}
+div.fl_editor_emojipicker ul li:hover {
+	border : solid 1px #333;
+	background : #ccc;
+}
+div.fl_editor_emojipicker a.fl_editor_emojipicker_close {
+	position : absolute;
+	top : 5px;
+	right : 5px;
+	background : url(../../images/icons/remove.png) top center no-repeat;
+	display : block;
+	width : 15px;
+	height : 15px;
+}
+
+
+/* ==== link, image box ==== */
+div.fl_editor_inputer {
+	position : absolute;
+	padding : 10px;
+	border : ridge 1px #ccc;
+	z-index : 120;
+	background : #fff;
+	margin-top : 5px;
+	display : none;
+	width : 300px;
+	text-align : right;
+	right : 0px;
+}
+div.fl_editor_inputer p{
+	margin : 0;
+	text-align : left;
+	padding : 3px 0;
+	font-size : 10pt;
+}
+div.fl_editor_inputer input.fl_editor_input{
+	width : 300px;
+}
+
+/* =========== table setter ============ */
+div#fl_editor_controls div.fl_editor_table {
+	position : absolute;
+	border : solid 10px #c1d9ff;
+	background : #fff;
+	padding : 10px;
+	table-layout : fixed;
+	width : 350px;
+	right : 0;
+	z-index : 100;
+	display : none;
+}
+div#fl_editor_controls div.fl_editor_table div.fl_editor_colorpicker table {
+	font-size : 10pt;
+	border: none;
+	width : 137px;
+}
+div#fl_editor_controls div.fl_editor_table table th {
+	text-align : left;
+	padding : 5px 0;
+	border-bottom : solid 1px #ccc;
+	border: none;
+	vertical-align : middle;
+}
+div#fl_editor_controls  div.fl_editor_table table td {
+text-align : left;
+padding : 3px 0;
+position : relative;
+border: none;
+line-height : normal;
+vertical-align : middle;
+}
+div#fl_editor_controls div.fl_editor_table div.fl_editor_colorpicker table td {
+	padding : 0;
+	border : solid 1px #333;
+}
+div#fl_editor_controls div.fl_editor_table  td.colsp_bg_color div.fl_editor_colorpicker {
+	left : 15px;
+	right : auto;
+}
+div.fl_editor_table table td.cell1 {
+	width : 3em;
+}
+
+div.fl_editor_table table input.mini-text {
+	width : 4em;
+}
+div.fl_editor_table table input.middle-text {
+	width : 7em;
+}
+div.fl_editor_table table input.init_hide {
+	display : none;
+}
+div.fl_editor_table table td.a {
+width : 100px;
+}
+div.fl_editor_table tr.fl_editor_table_set td {
+	text-align : center;
+}
+table#tableconf div.fl_editor_colorpicker td {
+	padding : 0;
+}
+
+

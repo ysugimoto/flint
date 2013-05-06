@@ -1,0 +1,458 @@
+div.fl_gadget_frame {
+	border : solid 1px #ccc;
+	position : relative;
+	border-radius : 5px;
+	-moz-border-radius : 5px;
+	-webkit-border-radius : 5px;
+	margin : 5px;
+}
+div.fl_gadget_separator {
+	padding : 5px;
+	position : relative;
+}
+div.fl_gadget_frame div.fl_gadget_bar {
+	padding : 10px;
+	background : url(../fl_images/gadget/gadget_header.jpg) top left repeat-x;
+	height : 10px;
+	position : relative;
+	z-index: 3;
+}
+div.fl_gadget_bar span.fl_gadget_title {
+	color : #fff;
+	font-size : 14px;
+	line-height : 1.0;
+	position : absolute;
+	top : 8px;
+	left : 10px;
+	display : block;
+	height : 22px;
+	padding-left : 28px;
+}
+div.fl_gadget_bar span.gmail {
+	background : url(../fl_images/gadget/icons/gmail.png) left top no-repeat;
+	
+}
+div.fl_gadget_bar span.weather {
+	background : url(../fl_images/gadget/icons/weather.png) 0px 0px no-repeat;
+	top : 5px;
+	padding-top : 5px;
+}
+div.fl_gadget_bar span.twitter {
+	background : url(../fl_images/gadget/icons/twitter.png) left top no-repeat;
+	top : 5px;
+	padding-top : 5px;
+}
+div.fl_gadget_bar span.rss {
+	background : url(../fl_images/gadget/icons/rss.png) left top no-repeat;
+	top : 5px;
+	padding-top : 5px;
+}
+div.fl_gadget_bar span.translate {
+	background : url(../fl_images/gadget/icons/google.png) left top no-repeat;
+	top : 5px;
+	padding-top : 5px;
+}
+div.fl_gadget_bar span.bbs {
+	background : url(../fl_images/gadget/icons/bbs.png) left top no-repeat;
+	top : 5px;
+	padding-top : 5px;
+}
+div.fl_gadget_bar span.memo {
+	background : url(../fl_images/gadget/icons/memo.png) left top no-repeat;
+	top : 5px;
+	padding-top : 5px;
+}
+div.fl_gadget_bar span.wikipedia {
+	background : url(../fl_images/gadget/icons/common.png) left top no-repeat;
+	top : 5px;
+	padding-top : 5px;
+}
+div.fl_gadget_bar ul.fl_gadget_options{
+	position : absolute;
+	top : 2px;
+	right : 20px;
+	height : 17px;
+	width : 100%;
+	margin : 0;
+	padding : 0;
+}
+div.fl_gadget_bar ul.fl_gadget_options li{
+	float : right;
+	display : inline;
+	width : 21px;
+	height : 21px;
+	margin-left : 4px;
+}
+div.fl_gadget_bar ul.fl_gadget_options li a {
+	width : 17px;
+	font-size : 0;
+	height : 17px;
+	padding : 4px;
+	display : block;
+	cursor : pointer !important;
+	text-indent : -9999px;
+}
+div.fl_gadget_bar ul.fl_gadget_options li a:hover {
+	padding : 3px;
+	border : solid 1px #fff;
+	border-radius : 5px;
+	-moz-border-radius : 5px;
+	-webkit-border-radius : 5px;
+}
+div.fl_gadget_bar ul.fl_gadget_options li a.fl_gadget_config {
+	background : url(../fl_images/gadget/config.png) center center no-repeat;
+}
+div.fl_gadget_bar ul.fl_gadget_options li a.fl_gadget_reload {
+	background : url(../fl_images/gadget/reload.png) center center no-repeat;
+}
+div.fl_gadget_bar ul.fl_gadget_options li a.fl_gadget_resize {
+	background : url(../fl_images/gadget/resize.png) center center no-repeat;
+}
+div.fl_gadget_bar ul.fl_gadget_options li a.fl_gadget_close {
+	background : url(../fl_images/gadget/close.png) center center no-repeat;
+}
+div.fl_gadget_frame div.fl_gadget_content {
+	padding : 15px;
+	padding-top : 10px;
+	position : relative;
+	overflow : auto;
+}
+div.fl_gadget_content p.fl_gadget_init {
+	background : url(../../images/loading_small.gif) left center no-repeat;
+	padding : 3px 20px;
+}
+div.fl_gadget_frame div.fl_gadget_footer {
+	height : 0px;
+	font-size : 0;
+	line-height : 0;
+	background : #00bf00;
+}
+div.fl_gadget_bar div.fl_gadget_config_content {
+	position : absolute;
+	top : 25px;
+	width : 270px;
+	right : 20px;
+	border : solid 1px #ccc;
+	background : #fff;
+	z-index : 10;
+	padding : 8px;
+	display : none;
+	cursor : default !important;
+	line-height : 1.2;
+	height : 150px;
+	overflow : auto;
+}
+div.fl_gadget_bar div.fl_gadget_connecting {
+	position : absolute;
+	bottom : -36px;
+	right : 20px;
+	width : 128px;
+	height : 15px;
+	padding : 10px;
+	z-index: 2;
+	background : url(../fl_images/gadget/gadget_loader.gif) center center no-repeat;
+	display : none;
+}
+div.fl_gadget_bar div.fl_gadget_config_content p.gadget_weather_area_caption {
+	margin-top : 2px;
+}
+div.fl_gadget_bar div.fl_gadget_config_content a.city_ids{
+	margin-right : 4px;
+}
+div.fl_gadget_bar div.fl_gadget_config_content a.city_ids:hover{
+	color : #c00;
+}
+/* === glabal tab gadget ==== */
+div.fl_gadget_content ul.gadget_tabs {
+	margin : 0;
+	padding : 0;
+}
+div.fl_gadget_content ul.gadget_tabs li{
+	float : left;
+	display : inline;
+	width : 80px;
+	border : solid 1px #ccc;
+	border-bottom : none;
+}
+div.fl_gadget_content ul.gadget_tabs li a{
+	display : block;
+	text-align : center;
+	padding : 5px 10px;
+	text-decoration : none;
+}
+div.fl_gadget_content ul.gadget_tabs li a.active{
+	background : #ccc;
+	color : #333;
+}
+div.fl_gadget_content div.gadget_tab_content {
+	border-top : solid 1px #ccc;
+	marrgin : 0;
+	padding : 0;
+}
+/* ==== memo gadget ==== */
+div.fl_gadget_content textarea.gadget_memo {
+	border : none;
+	width : 100%;
+	font-size : 13px;
+	line-height : 1.2;
+	height : 99%;
+	display : block;
+}
+
+/* ==== weather_gadget ==== */
+div#gadget div.fl_gadget_content table.sz_gadget_weather_table {
+	width : 100%;
+	border :none;
+	position : static;
+}
+div#gadget div.fl_gadget_content table.sz_gadget_weather_table td{
+	border : none;
+	background : transparent;
+	text-align : center;
+}
+div#gadget div.fl_gadget_content table.sz_gadget_weather_table td span{ 
+	display : block;
+}
+div#gadget div.fl_gadget_content table.sz_gadget_weather_table td.tomorrow{
+
+	border-left : solid 1px #ccc;
+	border-right : solid 1px #ccc;
+}
+div#gadget div.fl_gadget_content table.sz_gadget_weather_table td.caption{
+	border : none;
+	font-weight : bold;
+}
+
+/* ========= gmail gadget ==== */
+div#gadget div.gmail {
+	position : relative;
+}
+p.gmail_info {
+	margin-bottom : 8px;
+	padding-right : 5px;
+	text-align : right;
+}
+div#gadget table.gmail_list{
+	width : 100%;
+	border : none;
+	border-top :solid 1px #ccc;
+	font-size : 12px;
+}
+div#gadget table.gmail_list tr.unread td {
+	font-weight : bold;
+	background : #ffc;
+	position : relative;
+}
+div#gadget table.gmail_list tr td.subject {
+	cursor : pointer;
+}
+div.gmail_body {
+	position : absolute;
+	display : none;
+		border : solid 1px #ccc;
+	background : #fff;
+	border-radius : 5px;
+	-moz-border-radius : 5px;
+	-webkit-border-radius : 5px;
+	z-index : 50;
+	padding : 10px;
+	font-size : 12px;
+	text-align : left;
+}
+div.gmail_body a {
+	color : #1db638;
+	text-decoration : none;
+}
+div.gmail_body a:hover {
+	text-decoration : underline;
+}
+
+/* ==== twitter gadget ==== */
+div.twitter ul.gadget_twitter {
+	margin : 0;
+	padding : 0;
+}
+div.twitter ul.gadget_twitter li{
+	word-break : break-all;
+	-moz-word-break : break-all;
+	padding : 10px;
+	background : #fff;
+	border-bottom : dotted 2px #ccc;
+	line-height : 1.4;
+}
+div.twitter ul.gadget_twitter li a {
+	color : #1db638;
+	text-decoration : none;
+}
+div.twitter ul.gadget_twitter li a:hover {
+	text-decoration : underline;
+}
+div.twitter ul.gadget_twitter {
+	border-top : dotted 2px #ccc;
+}
+div.twitter p.account {
+	margin : 5px;
+}
+div.twitter ul.gadget_twitter p.twit_user {
+	text-align : right;
+	margin-top : 5px;
+}
+
+/* ==== rss gadget ==== */
+div.rss ul.gadget_rss {
+	margin : 0;
+	padding : 0;
+}
+div.rss ul.gadget_rss li{
+	padding : 10px;
+	background : #fff;
+	border-bottom : dotted 2px #ccc;
+	line-height : 1.4;
+}
+div.rss ul.gadget_rss li a {
+	color : #1552de;
+	text-decoration : none;
+}
+div.rss ul.gadget_rss li a:hover {
+	text-decoration : underline;
+}
+div.rss ul.gadget_rss {
+	border-top : dotted 2px #ccc;
+}
+
+/* ==== bbs gadget ==== */
+
+div.bbs ul.gadget_bbs {
+	margin : 0;
+	padding : 0;
+}
+div.bbs ul.gadget_bbs li{
+	padding : 10px;
+	background : #fff;
+	border-bottom : dotted 2px #ccc;
+	line-height : 1.4;
+	padding-bottom : 5px;
+}
+div.bbs ul.gadget_bbs li a {
+	color : #1552de;
+	text-decoration : none;
+}
+div.bbs ul.gadget_bbs li a:hover {
+	text-decoration : underline;
+}
+div.bbs ul.gadget_bbs li span {
+	color : #1db638;
+	display : block;
+	text-align : right;
+}
+div.bbs div.bbs_cn {
+	height : 180px;
+	overflow : auto;
+}
+form.gadget_bbs_submit_box {
+	position : relative;
+	padding-top : 35px;
+}
+form.gadget_bbs_submit_box textarea {
+	width : 100%;
+	height : 100px;
+	display : block;
+}
+form.gadget_bbs_submit_box p{
+	position : absolute;
+	font-size : 25px;
+	font-weight : bold;
+	top : 5px;
+	right : 5px;
+	color : #ccc;
+	font-family : Arial;
+	margin : 0;
+	padding : 0;
+	line-height : 1.0;
+}
+form.gadget_bbs_submit_box input{
+	padding : 0 10px;
+	margin-left : 15px;
+	margin-top : 5px;
+}
+form.gadget_bbs_submit_box span {
+	position : absolute;
+	top : 5px;
+	left : 10px;
+}
+
+/* ==== translate gadget ==== */
+div.translate textarea {
+	width : 100%;
+	height : 60px;
+	display : block;
+}
+div.translate textarea.default_value {
+	color : #ccc;
+}
+div.translate dt {
+	text-align : center;
+	margin : 0;
+	padding : 0;
+}
+div.translate dd , div.translate dl{
+	margin : 0;
+	padding : 0;
+}
+div.translate dt p {
+	vertical-align : middle;
+	line-height : 1.6;
+	margin : 5px 0 0 0;
+	padding : 0;
+}
+div.translate dt p label input {
+	vertical-align : middle;
+	margin-bottom : 5px;
+}
+div.translate form p.trans_result {
+	padding-left : 20px;
+	margin : 0;
+}
+div.translate form p.trans_loading {
+	background : url(../fl_images/loading_small.gif) left top no-repeat;
+}
+
+/* ==== wikipedia gadget ==== */
+div.wikipedia div {
+	height : 80px;
+	display : block;
+	border : solid 1px #ccc;
+	padding : 5px;
+	line-height : 1.2;
+	overflow : auto;
+}
+div.wikipedia input.wiki {
+	width : 65%;
+}
+div.wikipedia input.default_value {
+	color : #ccc;
+}
+div.wikipedia dt {
+	text-align : left;
+	margin : 0;
+	padding : 0;
+	padding-bottom : 5px;
+}
+div.wikipedia dd , div.wikipedia dl{
+	margin : 0;
+	padding : 0;
+}
+div.wikipedia dt p {
+	vertical-align : middle;
+	line-height : 1.6;
+	margin : 5px 0 0 0;
+	padding : 0;
+}
+div.wikipedia form p.wiki_result {
+	padding-left : 20px;
+	margin : 0;
+}
+div.wikipedia form p.wiki_loading {
+	background : url(../fl_images/loading_small.gif) left top no-repeat;
+}
+

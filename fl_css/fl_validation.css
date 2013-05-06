@@ -1,0 +1,62 @@
+div.fl_validation_balloon{
+	height : 45px;
+	position : absolute;
+	z-index : 100;
+	background : url(../fl_images/validation/balloon_back.gif) top left repeat-x;
+}
+* html div.fl_validation_ballon {
+	overflow : show;
+}
+div.fl_validation_balloon *{
+	margin : 0;
+	padding : 0;
+}
+div.fl_validation_balloon span.fl_validation_balloon_left{
+	position : absolute;
+	top : 0px;
+	left : -3px;
+	width : 33px;
+	height : 45px;
+	background : url(../fl_images/validation/balloon_left.png) top left no-repeat;
+	z-index : 102;
+}
+* html div.fl_validation_balloon span.fl_validation_balloon_left{
+	background : none;
+	/* bg_png fix on JavaScript */
+}
+
+div.fl_validation_balloon span.fl_validation_balloon_right{
+	position : absolute;
+	top : 0px;
+	right : -3px;
+	width : 14px;
+	height : 45px;
+	background : url(../fl_images/validation/balloon_right.png) top right no-repeat;
+	z-index : 102;
+}
+* html div.fl_validation_balloon span.fl_validation_balloon_right{
+	background : none;
+}
+div.fl_validation_balloon span.fl_validation_balloon_close{
+	display : block;
+	position : absolute;
+	top : 5px;
+	right : 10px;
+	cursor : pointer;
+	z-index : 106;
+	width : 10px;
+	height : 10px;
+	background : url(../fl_images/validation/balloon_close.gif) top left no-repeat;
+}
+div.fl_validation_balloon .fl_validation_error{
+	position : relative;
+	top : 0px;
+	height : 32px;
+	left : 10px;
+	color : #fff !important;
+	line-height : 1.0;
+	z-index : 105;
+	font-family : Arial, sans-serif;
+	font-size : 10px !important;
+}
+

@@ -1,0 +1,296 @@
+div#fl_image_canvas {
+	overflow : hidden;
+	border : solid 1px #ccc;
+}
+div#fl_image_canvas table#fl_image_editor_frame td {
+	background : #fff;
+	margin : 0;
+	padding : 0;
+	border : solid 1px #ddd;
+}
+div#fl_image_canvas table#fl_image_editor_frame td.fl_image_control {
+	border : none;
+}
+div#fl_image_canvas table#fl_image_editor_frame td div.fl_image_pulldowns {
+	margin : 5px 19px 5px 3px;
+	background : url(../fl_images/editor/editor_control.gif) top left no-repeat;
+	height : 25px;
+	position : relative;
+}
+div#fl_image_canvas table#fl_image_editor_frame {
+	border: none;
+}
+div#fl_image_canvas table#fl_image_editor_frame td div.fl_image_pulldowns div.fl_image_editor_radius_close {
+	position : absolute;
+	top : 0px;
+	right : -16px;
+	width : 16px;
+	height : 25px;
+	background : url(../fl_images/editor/editor_control.gif) top right no-repeat;
+}
+div#fl_image_mask {
+	position : absolute;
+	top : 0;
+	left : 0;
+	background : #000;
+	opacity : 0;
+	filter : alpha(opacity=0);
+	cursor : crosshair;
+	z-index : 40000; /* max */
+}
+div.fl_image_editor_crop {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 0;
+	height : 0;
+	font-size : 0;
+	display : none;
+	background : #fff;
+	z-index : 40001;
+	opacity : 0.5;
+	cursor : move;
+}
+div.fl_image_editor_crop div.fl_liner {
+	font-size : 0;
+	position : absolute;
+	z-index : 40002;
+	background : transparent url(../fl_images/clip_animation.gif) center center repeat;
+}
+div.fl_image_editor_crop div.fl_line_l {
+	top : -2px;
+	left : -2px;
+	width : 4px;
+	height : 100%;
+}
+div.fl_image_editor_crop div.fl_line_r {
+	top : -2px;
+	right : -2px;
+	width : 4px;
+	height : 100%;
+}
+div.fl_image_editor_crop div.fl_line_t {
+	top : -2px;
+	left : -2px;
+	width : 100%;
+	height : 4px;
+}
+div.fl_image_editor_crop div.fl_line_b {
+	bottom : -2px;
+	left : -2px;
+	width : 100%;
+	height : 4px;
+}
+div.fl_image_canvas_frame {
+	overflow : auto;
+	padding : 10px;
+}
+div.fl_image_editor_crop div.fl_image_resize {
+	font-size : 0;
+	position : absolute;
+	border : solid 1px #fff;
+	background : #000;
+	width : 10px;
+	height : 10px;
+	z-index : 40003;
+}
+div.fl_image_editor_crop div.fl_resize_lt {
+	top : -5px;
+	left : -5px;
+	cursor : nw-resize;
+}
+div.fl_image_editor_crop div.fl_resize_tc {
+	top : -5px;
+	left : 50%;
+	margin-left : -5px;
+	cursor : n-resize;
+}
+div.fl_image_editor_crop div.fl_resize_rt {
+	top : -5px;
+	right : -5px;
+	cursor : ne-resize;
+}
+div.fl_image_editor_crop div.fl_resize_rc {
+	top : 50%;
+	right : -5px;
+	margin-top : -5px;
+	cursor : e-resize;
+}
+div.fl_image_editor_crop div.fl_resize_rb {
+	bottom : -5px;
+	right : -5px;
+	cursor : se-resize;
+}
+div.fl_image_editor_crop div.fl_resize_bc {
+	bottom : -5px;
+	left : 50%;
+	margin-left : -5px;
+	cursor : s-resize;
+}
+div.fl_image_editor_crop div.fl_resize_lb {
+	bottom : -5px;
+	left : -5px;
+	cursor : sw-resize;
+}
+div.fl_image_editor_crop div.fl_resize_lc {
+	top : 50%;
+	left : -5px;
+	margin-top : -5px;
+	cursor : w-resize;
+}
+div#fl_image_canvas table#fl_image_editor_frame td.fl_image_canvas_cell {
+	position : relative;
+	background : #f6f6f6;
+}
+div#fl_image_canvas table#fl_image_editor_frame td.fl_image_canvas_cell div.fl_image_canvas_frame{
+	position : relative;
+	text-align : center;
+}
+div#fl_image_canvas table#fl_image_editor_frame td.fl_image_canvas_cell div.fl_image_canvas_preview {
+	position : relative;
+	text-align : center;
+	padding : 10px;
+	overflow : auto;
+}
+
+div#fl_image_canvas table#fl_image_editor_frame td.fl_image_canvas_cell canvas{
+	margin : 0;
+	padding : 0;
+	background : #f6f6f6;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+}
+div#fl_image_canvas table#fl_image_editor_frame td.fl_image_canvas_preview canvas{
+	margin : 0;
+	padding : 0;
+	background : #f6f6f6;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+}
+div#fl_image_canvas table#fl_image_editor_frame {
+	width : 100%;
+	margin : 0;
+	padding : 0;
+	border-collapse : collapse;
+}
+
+/* ==== menu conrols ==== */
+table#fl_image_editor_frame td.fl_image_control ul{
+	margin : 0;
+	padding : 0;
+	padding-left : 100px;
+}
+table#fl_image_editor_frame td.fl_image_control ul li {
+	float : left;
+	position : relative;
+	height : 17px;
+	display : inline;
+	margin-right : 8px;
+	margin-top : -1px;
+	padding-top : 8px;
+}
+* html table#fl_image_editor_frame td.fl_image_control ul li {
+	width : 55px;
+	margin-left : 6px;
+}
+* html table#fl_image_editor_frame td.fl_image_control ul li.long {
+	width : 90px;
+}
+
+table#fl_image_editor_frame td.fl_image_control ul li a{
+	display : block;
+	text-decoration : none;
+	color : #000;
+}
+table#fl_image_editor_frame td.fl_image_control ul li a:hover {
+	color : #666;
+}
+table#fl_image_editor_frame td.fl_image_control ul li ul{
+	position : absolute;
+	display : none;
+	z-index : 60000;
+	top : 20px;
+	left : 5px;
+	width : 100px;
+	border : solid 1px #ccc;
+	padding : 10px;
+	background : #fff;
+}
+*:first-child+html table#fl_image_editor_frame td.fl_image_control ul li ul {
+	top : -75px;
+	left : 0px;
+}
+* html table#fl_image_editor_frame td.fl_image_control ul li ul {
+	top : -85px;
+	left : 0px;
+}
+table#fl_image_editor_frame td.fl_image_control ul li ul li{
+	float : none;
+	display : block;
+	height : auto;
+}
+table#fl_image_editor_frame td.fl_image_control ul li ul li a{
+	display : block;
+	padding : 3px 10px;
+	text-align : center;
+}
+table#fl_image_editor_frame td.fl_image_control ul li.right {
+	float : right;
+}
+
+
+/* ==== properties ==== */
+p#fl_image_zooms {
+	font-size : 13px;
+	padding : 3px 20px 3px 0;
+	margin : 0;
+	text-align : right;
+	border-top : 1px solid #ddd;
+	border-bottom : 1px solid #ddd;
+	background : #fbfbfb;
+}
+div#fl_image_property {
+	margin-top : 5px;
+	height : 150px;
+}
+
+/* ==== new name box ==== */
+div.fl_image_editor_newname{
+	z-index : 40004;
+	position : absolute;
+	border : solid 5px #ccc;
+	background : #fff;
+	width : 400px;
+	height : 150px;
+	padding : 20px;
+	top : 50%;
+	left : 50%;
+	margin-left : -210px;
+	margin-top : -95px;
+	text-align : center;
+	display : none;
+}
+div.fl_image_editor_newname h4 {
+	font-size : 16px;
+	border-bottom : dotted 3px #cccccc;
+	padding-bottom : 3px;
+}
+div.fl_image_editor_newname p{
+	margin-top : 20px;
+	line-height : 15px;
+}
+div.fl_image_editor_newname div.newnamebox_complete {
+	display : none;
+}
+div.fl_image_editor_newname a{
+	position : absolute;
+	top : 5px;
+	right : 5px;
+	text-decoration : none;
+	color : #00c;
+}
+div.fl_image_editor_newname a:hover {
+	text-decoration : underline;
+}

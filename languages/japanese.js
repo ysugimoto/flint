@@ -1,0 +1,3 @@
+ClassExtend('Language', {
+	hogehoge : 'ほげほげ'
+});

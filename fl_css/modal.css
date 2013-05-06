@@ -1,0 +1,32 @@
+div.ci_modal{
+	position : fixed;
+	z-index : 2000;
+	padding : 20px;
+	border :solid 5px #ccc;
+	background-color : #fff;
+	text-align:center;
+	background-position:10px 10px;
+	background-repeat : no-repeat;
+}
+div.ci_modal div.ci_modal_text{
+	margin-top:20px;
+	margin-left : 120px;
+	text-align:left;
+	font-size : 10pt;
+	font-family : Helvetica, Georgia;
+}
+*:first-child+html div.ci_modal div.ci_modal_text{
+	margin-top : 30px;
+}
+div.ci_modal div.ci_modal_btn{
+	margin-top: 60px;
+}
+
+div.ci_modal div.ci_modal_btn img.ok_btn{
+	cursor : pointer;
+}
+div.ci_modal div.ci_modal_btn img.cn_btn{
+	cursor : pointer;
+	margin-left : 50px;
+}
+

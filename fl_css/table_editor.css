@@ -1,0 +1,28 @@
+table#fl_spreadsheet {
+	border-collapse : collapse;
+}
+table#fl_spreadsheet th {
+	background-color : #eee;
+	padding : 3px;
+}
+table#fl_spreadsheet th.active, table#fl_spreadsheet td.active {
+	background-color : #ccc;
+}
+table#fl_spreadsheet th.flsp_col {
+	padding : 3px 10px;
+}
+table#fl_spreadsheet th, table#fl_spreadsheet td {
+	border : solid 1px #ccc;
+	padding : 0;
+}
+table#fl_spreadsheet textarea {
+	border : none;
+	background : #fff;
+	width : 99%;
+	height : 100%;
+	padding : 0;
+	margin : 0;
+}
+table#fl_spreadsheet td.select textarea {
+	border : solid 1px #0000ff;
+}

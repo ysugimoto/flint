@@ -1,0 +1,118 @@
+div#fl_calendar {
+	position : absolute;
+	width : 221px;
+	top : 60%;
+	left : 60%;
+	background : url(../fl_images/calendar/calendar_box.png) top left no-repeat;
+	padding : 23px 0 5px 0;
+	z-index : 3000;
+	font-family: Arial, Helvetica, sans-serif;
+	display : none;
+}
+* html div#fl_calendar {
+	z-index : 10000;
+}
+div.fl_calendar_footer {
+	height : 7px;
+	width : 100%;
+	background : url(../fl_images/calendar/calendar_box_footer.png) top left no-repeat;
+	font-size : 0;
+}
+div.fl_calendar_wrapper {
+	border-left : solid 1px #666;
+	border-right : solid 1px #666;
+	width : 212px;
+	margin-top : 0px;
+	padding : 3px 3px 5px 3px;
+	background : #666;
+}
+div.fl_calendar_header {
+	position : relative;
+	padding : 5px;
+	margin-top : 3px;
+	color : #fff;
+}
+div.fl_calendar_header select{
+	font-size : 10px;
+}
+div.fl_calendar_header form {
+	text-align : center;
+}
+div.fl_calendar_header a {
+	position : absolute;
+	font-size : 10px;
+}
+a.prev_month {
+	top : 10px;
+	left : 5px;
+	text-decoration : none;
+	color : #fff;
+	background-color : #666;
+}
+a.next_month {
+	top : 10px;
+	right : 5px;
+	text-decoration : none;
+	color : #fff;
+	background-color : #666;
+}
+div#fl_calendar table { border: none;}
+div#fl_calendar table.fl_calendar_weeks {
+	width : 100%;
+	margin-top : 3px;
+}
+div#fl_calendar table th, div#fl_calendar table td {
+	padding : 1px;
+	border : none;
+}
+div#fl_calendar table.fl_calendar_weeks td {
+	color : #fff;
+	text-align : center;
+}
+div#fl_calendar table.fl_calendar_weeks {
+	margin : 0;
+}
+
+div#fl_calendar table th, div#fl_calendar table td a {
+	display : block;
+	border : solid 1px #add8e6;
+	background : #eaeaea;
+	color : #333;
+	padding : 5px 2px 5px 0;
+	text-align : right;
+	text-decoration : none;
+}
+div#fl_calendar table th, div#fl_calendar table td a:hover {
+	border : solid 1px #ffa500;
+	background : #ffc;
+	color : #900;
+}
+div#fl_calendar table td span {
+	display : block;
+	background : #fff;
+	border : solid 1px #fff;
+	color : #333;
+	padding : 5px 0;
+	text-align : center;
+	text-decoration : none;
+	cursor : default;
+}
+div#fl_calendar div.fl_calendar_body table td span {
+	color : #ccc;
+}
+div#fl_calendar table.fl_calendar_weeks td.sunday span{
+	background : #fcc9d2;
+	border : solid 1px #fcc9d2;
+	color : #c00;
+}
+div#fl_calendar table.fl_calendar_weeks td.saturday span{
+	background : #afd1f3;
+	border : solid 1px #afd1f3;
+	color : #0963bb;
+} 
+div#fl_calendar div.fl_calendar_body table {
+	width : 100%;
+	margin : 0;
+	margin-top : 2px;
+}
+

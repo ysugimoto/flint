@@ -1,0 +1,96 @@
+div.ci_calendar_box{
+	width:200px;
+	border:solid 1px #ccc;
+	background:#fff;
+	padding:10px 0;
+	position:absolute;
+	top:30px;
+	left:400px;
+	z-index:950;
+}
+div.ci_calendar_box table.ci_calendar_ym_table{
+	width:180px;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+}
+div.ci_calendar_box table.ci_calendar_ym_table th{
+	font-weight:normal;
+	font-size:9pt;
+	padding:3px 0;
+}
+div.ci_calendar_box table.ci_calendar_ym_table th.ci_calendar_ym_blank{
+	width:10px;
+}
+div.ci_calendar_box table.ci_calendar_ym_table th a{
+	color:#333;
+	text-decoration:none;
+	cursor:pointer;
+}
+div.ci_calendar_box table.ci_calendar_ym_table th a:hover{
+	color:#dddd00;
+}
+div.ci_calendar_box table.ci_calendar_ym_table th.ci_calendar_caption_ym{
+	font-size:13pt;
+}
+div.ci_calendar_box div.ci_calendar_body{
+	width:180px;
+	margin:5px auto 0 auto;
+	position:relative;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table{
+	width:180px;
+	text-align:right;
+	position:relative;
+	border-collapse:collapse;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table td{
+	border:solid 1px #d9d9d9;
+	padding:3px;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table th{
+	border:solid 1px #d9d9d9;
+	padding:3px;
+	font-weight : normal;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table th.ci_calendar_sunday{
+	background-color:#ffb9b9;
+	color:#f00;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table th.ci_calendar_saturday{
+	background-color:#84c1ff;
+	color:#00f;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table td.ci_calendar_sunday{
+	background-color:#ffb9b9;
+	color:#f00;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table td.ci_calendar_saturday{
+	background-color:#84c1ff;
+	color:#00f;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table td.np_text{
+	color:#ccc;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table td.np_textf{
+	color:#fff;
+}
+div.ci_calendar_box div.ci_calendar_body table.ci_calendar_body_table td#ci_calendar_today{
+	color:#ff80ff;
+	font-weight:bold;
+}
+div.ci_calendar_box a.ci_clanedar_close{
+	position:absolute;
+	top:3px;
+	right:3px;
+	display:block;
+	width : 15px;
+	height : 15px;
+	display : block;
+	background : #fff url(../fl_images/calendar/close.gif) no-repeat center center;
+	cursor : pointer;
+}
+div.ci_calendar_box a.ci_clanedar_close:hover{
+	background-color:#848484;;
+	color:#fff;
+}

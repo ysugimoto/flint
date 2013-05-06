@@ -1,0 +1,104 @@
+
+div.fl_ui_slider {
+	position : relative;
+	margin-top : 10px;
+	background : #fff;
+}
+div.fl_ui_slider p.fl_ui_slider_back_left{
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	margin : 0px;
+	padding : 0px;
+	height : 5px;
+	background : url(../fl_images/ui/slider_left.png) top left no-repeat;
+}
+div.fl_ui_slider p.fl_ui_slider_back_center{
+	position : absolute;
+	top : 0px;
+	margin : 0px;
+	padding : 0px;
+	background : url(../fl_images/ui/slider_center.gif) top center repeat-x;
+	height : 5px;
+	left : 6px;
+}
+div.fl_ui_slider p.fl_ui_slider_back_right{
+	position : absolute;
+	top : 0px;
+	right : 0px;
+	margin : 0px;
+	padding : 0px;
+	height : 5px;
+	background : url(../fl_images/ui/slider_right.png) top right no-repeat;
+}
+
+div.fl_ui_slider div.fl_ui_slider_pointer{
+	position : absolute;
+	margin : 0px;
+	padding : 0px;
+	width : 8px;
+	height : 15px;
+	top : -5px;
+	cursor : pointer;
+	background : url(../fl_images/ui/pointer.png) top center no-repeat;
+}
+* html div.fl_ui_slider div.fl_ui_slider_pointer{
+	background : none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=fl_images/ui/pointer.png, sizingMethod=scale);
+}
+
+div.fl_ui_slider div.onslide0{
+	background : url(../fl_images/ui/pointer_on_0.png) top center no-repeat !important;
+}
+* html div.fl_ui_slider div.onslide0{
+	background : none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=fl_images/ui/pointer_on_0.png, sizingMethod=scale);
+		cursor : pointer;
+}
+div.fl_ui_slider div.onslide1{
+	background : url(../fl_images/ui/pointer_on_1.png) top center no-repeat !important;
+}
+* html div.fl_ui_slider div.onslide1{
+	background : none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=fl_images/ui/pointer_on_1.png, sizingMethod=scale);
+		cursor : pointer;
+}
+div.fl_ui_slider div.onslide2{
+	background : url(../fl_images/ui/pointer_on_2.png) top center no-repeat !important;
+}
+* html div.fl_ui_slider div.onslide2{
+	background : none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=fl_images/ui/pointer_on_2.png, sizingMethod=scale);
+	cursor : pointer;
+}
+div.fl_ui_slider p.fl_ui_slider_state{
+	position : absolute;
+	top : -45px;
+	width : 31px;
+	height : 26px;
+	text-align : left;
+	background : url(../fl_images/ui/percent.png) top left no-repeat;
+	font-family : Arial !important;
+	font-size : 12px;
+	padding : 2px 0 0 7px;
+}
+* html div.fl_ui_slider p.fl_ui_slider_state{
+	background : none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=fl_images/ui/percent.png, sizingMethod=scale);
+	top : -30px;
+}
+div.fl_zoom_close_btn {
+	width : 47px;
+	height : 48px;
+	margin : 0;
+	padding : 0;
+	position : absolute;
+	top : -15px;
+	right : -20px;
+	background : url(../fl_images/ui/close.png) top left no-repeat;
+	cursor : pointer;
+}
+* html div.fl_zoom_close_btn {
+	background : none;
+	/*filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(src=fl_images/ui/close.png,sizingMethod=scale);*/
+}

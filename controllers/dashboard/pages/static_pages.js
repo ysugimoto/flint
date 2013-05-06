@@ -1,0 +1,3 @@
+ClassExtend('Controller', function StaticpagesController() {
+	
+});
